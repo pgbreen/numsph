@@ -47,7 +47,7 @@ def alp(l,x,derivative=False):
 				elif mi == li:
 					dplmi = li*x*plm[(mi,li)]/tc
 				else:
-					dplmi = (li*x*plm[(mi,li)]-(li-mi)*plm[(mi,li-1)] )/tc
+					dplmi = (li*x*plm[(mi,li)]-(li+mi)*plm[(mi,li-1)] )/tc
 				dplm[(mi,li)] = dplmi
 		return plm, dplm
 	return plm
